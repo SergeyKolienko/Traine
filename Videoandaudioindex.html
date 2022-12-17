@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Video and audio -->
+    <video
+  src="http://techslides.com/demos/sample-videos/small.webm"
+  poster="https://images.pexels.com/photos/595804/pexels-photo-595804.jpeg?w=640"
+  width="640"
+  controls
+  autoplay
+  loop
+  preload="auto"
+></video>
+<!-- Загружать лишь один формат видеофайла недостаточно, некоторые браузеры могут его не поддерживать, и пользователь не сможет посмотреть видео. Есть несколько популярных видеоформатов которые необходимо предоставить браузеру на выбор: webm, mp4 и ogg. -->
+<video
+  poster="https://images.pexels.com/photos/595804/pexels-photo-595804.jpeg?w=640"
+  width="640"
+  controls
+>
+  <source
+    src="http://techslides.com/demos/sample-videos/small.webm"
+    type="video/webm"
+  />
+  <source
+    src="http://techslides.com/demos/sample-videos/small.mp4"
+    type="video/mp4"
+  />
+  <source
+    src="http://techslides.com/demos/sample-videos/small.ogg"
+    type="video/ogg"
+  />
+</video>
+
+<!-- Аудио -->
+
+<audio controls>
+    <source src="song.mp3" type="audio/mp3" />
+    <source src="song.ogg" type="audio/ogg" />
+  </audio>
+  <!-- Поддержка старых браузеров -->
+
+  <video
+  poster="https://images.pexels.com/photos/595804/pexels-photo-595804.jpeg?w=640"
+  width="640"
+  controls
+>
+  <source
+    src="http://techslides.com/demos/sample-videos/small.webm"
+    type="video/webm"
+  />
+  <source
+    src="http://techslides.com/demos/sample-videos/small.mp4"
+    type="video/mp4"
+  />
+  <source
+    src="http://techslides.com/demos/sample-videos/small.ogg"
+    type="video/ogg"
+  />
+
+  Your browser does not support the <code>video</code> element.
+</video>
+
+<audio controls>
+  <source src="song.mp3" type="audio/mpeg" />
+  <source src="song.ogg" type="audio/ogg" />
+
+  Your browser does not support the <code>audio</code> element.
+</audio>
+</body>
+</html>
