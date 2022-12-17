@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <!-- Разметка текста -->
+    <dl>
+        <dt>JPEG</dt>
+        <dd>
+          Large files that do not require transparent backgrounds or animations. This format is ideal for vivid photorealistic photographs as it can contain millions of colors.
+        </dd>
+      
+        <dt>PNG</dt>
+        <dd>
+          Has an additional parameter for describing transparency - the alpha channel. Suitable for images with transparent or monochrome backgrounds. Used for icons and decorative items.
+        </dd>
+      
+        <dt>webP</dt>
+        <dd>
+          A replacement format for PNG and JPEG, but with incomplete browser support. When
+          equal image quality, the compressed files will be smaller than PNG and JPEG on average
+          by 25%.
+        </dd>
+      </dl>
+      <p>
+        Тег <span class="accent">span</span> это универсальный контейнер для мелкого
+        текстового контента.
+      </p>
+
+      <!-- По умолчанию браузер игнорирует переносы строк и более одного пробела подряд. Этот тег позволяет добавить преформатированный текст с принудительными переносами строк. Например разметка текста песни или стихотворения. -->
+      <pre>
+        Wyatt resteth here, that quick could never rest;
+        Whose heavenly gifts increased by disdain,
+        And virtue sank the deeper in his breast;
+        Such profit he by envy could obtain.
+      </pre>
+      
+      <pre>
+        A head where wisdom mysteries did frame,
+        Whose hammers beat still in that lively brain
+        As on a stithy where that some work of fame
+        Was daily wrought, to turn to Britain's gain.
+      </pre>
+      
+      <pre>
+        A visage stern and mild, where both did grow,
+        Vice to contemn, in virtue to rejoice;
+        Amid great storms, whom grace assured so
+        To live upright and smile at fortune's choice.
+      </pre>
+
+      <!-- Предназначены для отображения символов в верхнем (<sup>, сокращение от superscript) и нижнем (<sub>, сокращение от subscript) индексе. Например для разметки несложных математических или химических формул.
+
+ -->
+ <p>Formula of water  - H<sub>2</sub>O</p>
+
+<p>Total area of the room - 150м<sup>2</sup>.</p>
+
+<p>Solve the equation a<sup>3</sup>+a<sup>2</sup>=4</p>
+
+<!-- Дату и время можно написать просто текстом, но лучше использовать специальный тег <time>. Дата для человека это текст внутри тега, а для машины - значение атрибута datetime в формате ISO 8601. -->
+    <p>
+        Последние новости на <time datetime="2019-12-14">14 декабря 2019 года</time>.
+      </p>
+      
+      <p>
+        Заседание состоялось в <time datetime="2018-07-14T11:30">11:30 утра</time>.
+      </p>
+      <!-- Предназначен для хранения контактной информации об авторе статьи, блока информации или веб-страницы в целом. Контактная информация может быть в любой подходящей форме, например физический адрес, адрес электронной почты, ссылка на сайт, номер телефона, тег соцсети. -->
+      <address>
+        г. Киев, <br />
+        Бульвар Леси Украинки, д. 26, <br />
+        4й этаж офис 427
+      </address>
+      
+      <address>
+        <a href="mailto:mango@mail.pig">mango@mail.pig</a>
+        <a href="tel:+1112223344">(111) 222-33-44</a>
+      </address>
+      <!-- ВНИМАНИЕ
+Тег <br/> (сокращение от line break) не используется для того, чтобы принудительно добавить разрывы строки между тегами или разбить массив текста на абазцы. -->
+<!-- Теги <strong> и <b> -->
+    <p>
+        <strong>Внимание!</strong> Заканчивается срок подписки.
+        <strong>Учётная запись будет приостановлена.</strong> Пожалуйста продлите
+        подписку или свяжитесь со службой поддержки.
+      </p>
+      <!-- Теги <em> и <i> -->
+        <p>Я <em>в полном восторге</em> когда задерживают зарплату!</p>
+</body>
+</html>
